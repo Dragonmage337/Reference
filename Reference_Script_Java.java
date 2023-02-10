@@ -37,12 +37,17 @@
         //Its a sorting algorithm that uses all of these structures
         public static void insertionSortImperativeA(int[] input) 
 	{
+		
 		for (int i = 1; i < input.length; i++) 
-		{ 
+		{
+			//Sets the variables to be sorted
 			int key = input[i]; 
+			//j is equal to the variable given minus one
 			int j = i - 1;
+			//This is what does the actual sorting, if j is greater or equal to zero and input j is greater than key
 			while (j >= 0 && input[j] > key) 
 			{
+				//get a new variable + 1 and then that is equal to new input
 				input[j + 1] = input[j];
 				j = j - 1;
 			}
