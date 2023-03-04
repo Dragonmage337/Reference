@@ -53,10 +53,12 @@
 			}
 			input[j + 1] = key; 
 		}
-		
+	//Creates a new method to shift an input to the right	
 	public static int[] ShiftRight(int[] arrayE)
 	{
+		//Sets integer l to the array length
 		int l = arrayE.length;
+		// 
 		int last = arrayE[l-1];
 		for(int i = 1; i <=l-1; i++)
 		{
